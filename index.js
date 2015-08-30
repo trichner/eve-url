@@ -23,7 +23,8 @@ var TEMPLATES = {
   CHANNEL : "<url=joinChannel:{id}>{name}</url>",
   CONTRACT : "<url=contract:30002200//{id}>{name}</url>",
   FITTING : "<url=fitting:{dna}>{name}</url>",
-  ITEM : "<url=showinfo:25812//{id}>{name}</url>"
+  ITEM : "<url=showinfo:25812//{id}>{name}</url>",
+  WEBURL : "<url={url}>{name}</url>"
 }
 
 function interpolateUrl(template,values){
@@ -54,6 +55,9 @@ module.exports = {
     },
     urlFitting : function(dna,name){
       return interpolateUrl(TEMPLATES.FITTING,{dna:dna,name:name});
+    },
+    urlWeb : function(url,name){
+      return interpolateUrl(TEMPLATES.WEBURL,{url:url,name:name});
     },
     urlContract : function(id,name){
       return interpolateUrl(TEMPLATES.CONTRACT,{id:id,name:name});
