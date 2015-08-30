@@ -1,0 +1,19 @@
+{
+  "name": "eve-url",
+  "version": "0.1.0",
+  "private": false,
+  "main": "index.js",
+  "contributors": [
+    {
+      "name": "Thomas Richner",
+      "email": "npm@trichner.ch"
+    }
+  ],
+  "license": "MIT",
+  "keywords":["eve","eve-online","url"],
+  "description":"Interpolates urls for EVE online.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trichner/eve-url"
+  }
+}
